@@ -1,0 +1,25 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>wxWidgets Application</Name>
+    <Description>Creates a basic wxWidgets application that uses a wxFrame</Description>
+    <ProjectType>VC</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>wxWidgets Application</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="topo.vcxproj" File="topo.vcxproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="false" TargetFileName="$projectname$.vcxproj.filters">topo.vcxproj.filters</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Application.cpp">Application.cpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="MainFrame.cpp">MainFrame.cpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Application.h">Application.h</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="MainFrame.h">MainFrame.h</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>
